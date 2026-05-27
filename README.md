@@ -3,11 +3,11 @@
 <a href="https://txsun1997.github.io/blogs/moss.html" target="_blank"><img src="https://txsun1997.github.io/images/moss.png" alt="MOSS" style="width: 50%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-brightgreen.svg)](https://github.com/OpenLMLab/MOSS/blob/main/LICENSE)
-[![Data License](https://img.shields.io/badge/Data%20License-CC%20BY--NC%204.0-blue.svg)](https://github.com/OpenLMLab/MOSS/blob/main/DATA_LICENSE)
-[![Model License](https://img.shields.io/badge/Model%20License-GNU%20AGPL%203.0-red.svg)](https://github.com/OpenLMLab/MOSS/blob/main/MODEL_LICENSE)
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-brightgreen.svg)](https://github.com/OpenMOSS/MOSS/blob/main/LICENSE)
+[![Data License](https://img.shields.io/badge/Data%20License-CC%20BY--NC%204.0-blue.svg)](https://github.com/OpenMOSS/MOSS/blob/main/DATA_LICENSE)
+[![Model License](https://img.shields.io/badge/Model%20License-GNU%20AGPL%203.0-red.svg)](https://github.com/OpenMOSS/MOSS/blob/main/MODEL_LICENSE)
 
-[[论文](https://link.springer.com/article/10.1007/s11633-024-1502-8)][[中文版](https://github.com/OpenLMLab/MOSS/blob/main/README.md)] [[English](https://github.com/OpenLMLab/MOSS/blob/main/README_en.md)] [[官方微信群](https://github.com/OpenLMLab/MOSS/blob/main/examples/WeChatGroupQR.jpg)]
+[[论文](https://link.springer.com/article/10.1007/s11633-024-1502-8)][[中文版](https://github.com/OpenMOSS/MOSS/blob/main/README.md)] [[English](https://github.com/OpenMOSS/MOSS/blob/main/README_en.md)] [[官方微信群](https://github.com/OpenMOSS/MOSS/blob/main/examples/WeChatGroupQR.jpg)]
 
 ## 目录
 
@@ -47,8 +47,8 @@
 ### 数据
 
 - [**moss-002-sft-data**](https://huggingface.co/datasets/OpenMOSS-Team/moss-002-sft-data): MOSS-002所使用的多轮对话数据，覆盖有用性、忠实性、无害性三个层面，包含由`text-davinci-003`生成的约57万条英文对话和59万条中文对话。
-- [**moss-003-sft-data**](https://github.com/OpenLMLab/MOSS/tree/main/SFT_data): `moss-moon-003-sft`所使用的多轮对话数据，基于MOSS-002内测阶段采集的约10万用户输入数据和`gpt-3.5-turbo`构造而成，相比`moss-002-sft-data`，`moss-003-sft-data`更加符合真实用户意图分布，包含更细粒度的有用性类别标记、更广泛的无害性数据和更长对话轮数，约含110万条对话数据。完整数据已全部开源。
-- [**moss-003-sft-plugin-data**](https://github.com/OpenLMLab/MOSS/tree/main/SFT_data/conversations/conversation_with_plugins): `moss-moon-003-sft-plugin`所使用的插件增强的多轮对话数据，包含支持搜索引擎、文生图、计算器、解方程等四个插件在内的约30万条多轮对话数据。已[开源](https://huggingface.co/datasets/OpenMOSS-Team/moss-003-sft-data/tree/main)所有数据。
+- [**moss-003-sft-data**](https://github.com/OpenMOSS/MOSS/tree/main/SFT_data): `moss-moon-003-sft`所使用的多轮对话数据，基于MOSS-002内测阶段采集的约10万用户输入数据和`gpt-3.5-turbo`构造而成，相比`moss-002-sft-data`，`moss-003-sft-data`更加符合真实用户意图分布，包含更细粒度的有用性类别标记、更广泛的无害性数据和更长对话轮数，约含110万条对话数据。完整数据已全部开源。
+- [**moss-003-sft-plugin-data**](https://github.com/OpenMOSS/MOSS/tree/main/SFT_data/conversations/conversation_with_plugins): `moss-moon-003-sft-plugin`所使用的插件增强的多轮对话数据，包含支持搜索引擎、文生图、计算器、解方程等四个插件在内的约30万条多轮对话数据。已[开源](https://huggingface.co/datasets/OpenMOSS-Team/moss-003-sft-data/tree/main)所有数据。
 - **moss-003-pm-data**: `moss-moon-003-pm`所使用的偏好数据，包含在约18万额外对话上下文数据及使用`moss-moon-003-sft`所产生的回复数据上构造得到的偏好对比数据，将在近期开源。
 
 ### 工程方案
@@ -66,47 +66,47 @@ MOSS是一个支持中英双语和多种插件的开源对话语言模型，`mos
 
 **MOSS用例**：
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_search.gif)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_search.gif)
 
 <details><summary><b>简单数学应用题</b></summary>
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_calculate.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_calculate.png)
 
 </details>
 
 <details><summary><b>解方程</b></summary>
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_solver.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_solver.png)
 
 </details>
 
 <details><summary><b>生成图片</b></summary>
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_text2img.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_text2img.png)
 
 </details>
 
 <details><summary><b>中文语境</b></summary>
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_chinese_1.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_chinese_1.png)
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_chinese_2.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_chinese_2.png)
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_chinese_3.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_chinese_3.png)
 
 </details>
 
 <details><summary><b>代码能力</b></summary>
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_code_1.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_code_1.png)
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_code_2.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_code_2.png)
 
 </details>
 
 <details><summary><b>无害性</b></summary>
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_harmless.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_harmless.png)
 
 </details>
 
@@ -126,7 +126,7 @@ MOSS是一个支持中英双语和多种插件的开源对话语言模型，`mos
 1. 下载本仓库内容至本地/远程服务器
 
 ```bash
-git clone https://github.com/OpenLMLab/MOSS.git
+git clone https://github.com/OpenMOSS/MOSS.git
 cd MOSS
 ```
 
@@ -274,7 +274,7 @@ pip install -r requirements.txt
 
 其中"Human"为用户输入，"Results"为插件调用结果，需要在程序中写入，其余字段为模型输出。因此，使用插件版MOSS时每轮对话需要调用两次模型，第一次生成到`<eoc>`获取插件调用结果并写入"Results"，第二次生成到`<eom>`获取MOSS回复。
 
-我们通过[meta instruction](https://github.com/OpenLMLab/MOSS/blob/main/meta_instruction.txt)来控制各个插件的启用情况。默认情况下所有插件均为`disabled`，若要启用某个插件，需要修改对应插件为`enabled`并提供接口格式。示例如下：
+我们通过[meta instruction](https://github.com/OpenMOSS/MOSS/blob/main/meta_instruction.txt)来控制各个插件的启用情况。默认情况下所有插件均为`disabled`，若要启用某个插件，需要修改对应插件为`enabled`并提供接口格式。示例如下：
 
 ```
 - Web search: enabled. API: Search(query)
@@ -352,13 +352,13 @@ Search("黑暗荣耀 主演") =>
 <|MOSS|>: 《黑暗荣耀》的主演包括宋慧乔、李到晛、林智妍、郑星一等人。<sup><|1|></sup><eom>
 ```
 
-其他插件格式请参考[conversation_with_plugins](https://github.com/OpenLMLab/MOSS/tree/main/SFT_data/conversations/conversation_with_plugins). 搜索引擎插件可参照我们开源的[MOSS WebSearchTool](https://github.com/OpenLMLab/MOSS_WebSearchTool). 
+其他插件格式请参考[conversation_with_plugins](https://github.com/OpenMOSS/MOSS/tree/main/SFT_data/conversations/conversation_with_plugins). 搜索引擎插件可参照我们开源的[MOSS WebSearchTool](https://github.com/OpenLMLab/MOSS_WebSearchTool). 
 
 #### 网页Demo
 
 **Streamlit**
 
-我们提供了一个基于[Streamlit](https://streamlit.io/)实现的网页Demo，您可以运行本仓库中的[moss_web_demo_streamlit.py](https://github.com/OpenLMLab/MOSS/blob/main/moss_web_demo_streamlit.py)来打开网页Demo：
+我们提供了一个基于[Streamlit](https://streamlit.io/)实现的网页Demo，您可以运行本仓库中的[moss_web_demo_streamlit.py](https://github.com/OpenMOSS/MOSS/blob/main/moss_web_demo_streamlit.py)来打开网页Demo：
 
 ```bash
 streamlit run moss_web_demo_streamlit.py --server.port 8888
@@ -372,11 +372,11 @@ streamlit run moss_web_demo_streamlit.py --server.port 8888 -- --model_name Open
 
 注意：使用Streamlit命令时需要用一个额外的`--`分割Streamlit的参数和Python程序中的参数。
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/moss_web_demo.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/moss_web_demo.png)
 
 **Gradio**
 
-感谢[Pull Request](https://github.com/OpenLMLab/MOSS/pull/25)提供的基于[Gradio](https://gradio.app/)的网页Demo，您可以运行本仓库中的[moss_web_demo_gradio.py](https://github.com/OpenLMLab/MOSS/blob/main/moss_web_demo_gradio.py)：
+感谢[Pull Request](https://github.com/OpenMOSS/MOSS/pull/25)提供的基于[Gradio](https://gradio.app/)的网页Demo，您可以运行本仓库中的[moss_web_demo_gradio.py](https://github.com/OpenMOSS/MOSS/blob/main/moss_web_demo_gradio.py)：
 
 ```bash
 python moss_web_demo_gradio.py
@@ -428,7 +428,7 @@ python moss_cli_demo.py
 python moss_cli_demo.py --model_name OpenMOSS-Team/moss-moon-003-sft --gpu 0,1
 ```
 
-![image](https://github.com/OpenLMLab/MOSS/blob/main/examples/example_moss_cli_demo.png)
+![image](https://github.com/OpenMOSS/MOSS/blob/main/examples/example_moss_cli_demo.png)
 
 同时，我们也提供了由深度学习框架 [计图Jittor](https://github.com/Jittor/Jittor) 支持的MOSS模型，您可以通过运行仓库中的 `moss_cli_demo_jittor.py` 来启动命令行Demo。计图能够在显存不足时通过内存交换大幅度减少显存的消耗。首先确保您安装了 `Jittor` 和 `cupy`：
 
@@ -445,11 +445,11 @@ python moss_cli_demo.py --model_name OpenMOSS-Team/moss-moon-003-sft --gpu
 
 #### 通过API调用MOSS服务
 
-如您不具备本地部署条件或希望快速将MOSS部署到您的服务环境，请联系我们获取推理服务IP地址以及专用API KEY，我们将根据当前服务压力考虑通过API接口形式向您提供服务，接口格式请参考[这里](https://github.com/OpenLMLab/MOSS/blob/main/moss_api.pdf)。由于服务能力有限，目前仅面向企业开放API服务，请签署[本文件](https://github.com/OpenLMLab/MOSS/blob/main/agreements/MOSS_agreement.pdf)并填写[此问卷](https://a1jkiq3cpx.feishu.cn/share/base/form/shrcn80vIDuXWOOEGrHpvARaBPe)取得授权。
+如您不具备本地部署条件或希望快速将MOSS部署到您的服务环境，请联系我们获取推理服务IP地址以及专用API KEY，我们将根据当前服务压力考虑通过API接口形式向您提供服务，接口格式请参考[这里](https://github.com/OpenMOSS/MOSS/blob/main/moss_api.pdf)。由于服务能力有限，目前仅面向企业开放API服务，请签署[本文件](https://github.com/OpenMOSS/MOSS/blob/main/agreements/MOSS_agreement.pdf)并填写[此问卷](https://a1jkiq3cpx.feishu.cn/share/base/form/shrcn80vIDuXWOOEGrHpvARaBPe)取得授权。
 
 ## :fire: 微调
 
-本仓库提供了基于 MOSS 基座模型进行 SFT 训练的微调代码 [finetune_moss.py](https://github.com/OpenLMLab/MOSS/blob/main/finetune_moss.py).下面以微调不带 plugins 的对话数据为例介绍代码的使用方法（带 plugins 的数据与此一致）。
+本仓库提供了基于 MOSS 基座模型进行 SFT 训练的微调代码 [finetune_moss.py](https://github.com/OpenMOSS/MOSS/blob/main/finetune_moss.py).下面以微调不带 plugins 的对话数据为例介绍代码的使用方法（带 plugins 的数据与此一致）。
 
 ### 软件依赖
 
@@ -464,7 +464,7 @@ transformers==4.25.1
 
 ### 使用方法
 
-将数据集按照 [conversation_without_plugins](https://github.com/OpenLMLab/MOSS/tree/main/SFT_data/conversations/conversation_without_plugins) 格式处理并放到 `sft_data` 目录中。将 [configs](https://github.com/OpenLMLab/MOSS/tree/main/configs) 文件夹下载到本地（可根据自己的计算配置更改相关信息，详细请参考 [accelerate](https://huggingface.co/docs/accelerate/usage_guides/deepspeed) 官方文档。
+将数据集按照 [conversation_without_plugins](https://github.com/OpenMOSS/MOSS/tree/main/SFT_data/conversations/conversation_without_plugins) 格式处理并放到 `sft_data` 目录中。将 [configs](https://github.com/OpenMOSS/MOSS/tree/main/configs) 文件夹下载到本地（可根据自己的计算配置更改相关信息，详细请参考 [accelerate](https://huggingface.co/docs/accelerate/usage_guides/deepspeed) 官方文档。
 
 创建 `run.sh` 文件并将以下内容复制到该文件中：
 
@@ -526,7 +526,7 @@ bash run.sh
 
 ## :page_with_curl: 开源协议
 
-本项目所含代码采用[Apache 2.0](https://github.com/OpenLMLab/MOSS/blob/main/LICENSE)协议，数据采用[CC BY-NC 4.0](https://github.com/OpenLMLab/MOSS/blob/main/DATA_LICENSE)协议，模型权重采用[GNU AGPL 3.0](https://github.com/OpenLMLab/MOSS/blob/main/MODEL_LICENSE)协议。如需将本项目所含模型用于商业用途或公开部署，请签署[本文件](https://github.com/OpenLMLab/MOSS/blob/main/agreements/MOSS_agreement.pdf)并填写[此问卷](https://a1jkiq3cpx.feishu.cn/share/base/form/shrcn80vIDuXWOOEGrHpvARaBPe)取得授权，商用情况仅用于记录，不会收取任何费用。如使用本项目所含模型及其修改版本提供服务产生误导性或有害性言论，造成不良影响，由服务提供方负责，与本项目无关。
+本项目所含代码采用[Apache 2.0](https://github.com/OpenMOSS/MOSS/blob/main/LICENSE)协议，数据采用[CC BY-NC 4.0](https://github.com/OpenMOSS/MOSS/blob/main/DATA_LICENSE)协议，模型权重采用[GNU AGPL 3.0](https://github.com/OpenMOSS/MOSS/blob/main/MODEL_LICENSE)协议。如需将本项目所含模型用于商业用途或公开部署，请签署[本文件](https://github.com/OpenMOSS/MOSS/blob/main/agreements/MOSS_agreement.pdf)并填写[此问卷](https://a1jkiq3cpx.feishu.cn/share/base/form/shrcn80vIDuXWOOEGrHpvARaBPe)取得授权，商用情况仅用于记录，不会收取任何费用。如使用本项目所含模型及其修改版本提供服务产生误导性或有害性言论，造成不良影响，由服务提供方负责，与本项目无关。
 
 ## :heart: 致谢
 
@@ -550,4 +550,4 @@ bash run.sh
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=OpenLMLab/MOSS&type=Date)](https://star-history.com/#OpenLMLab/MOSS&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=OpenMOSS/MOSS&type=Date)](https://star-history.com/#OpenMOSS/MOSS&Date)
