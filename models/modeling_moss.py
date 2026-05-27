@@ -21,18 +21,18 @@ from .configuration_moss import MossConfig
 
 logger = logging.get_logger(__name__)
 
-_CHECKPOINT_FOR_DOC = "fnlp/moss-moon-003-base"
+_CHECKPOINT_FOR_DOC = "OpenMOSS-Team/moss-moon-003-base"
 _CONFIG_FOR_DOC = "MossConfig"
 
 
 MOSS_PRETRAINED_MODEL_ARCHIVE_LIST = [
-    "fnlp/moss-moon-003-base",
-    "fnlp/moss-moon-003-sft",
-    "fnlp/moss-moon-003-sft-plugin",
-    "fnlp/moss-moon-003-sft-int4",
-    "fnlp/moss-moon-003-sft-plugin-int4",
-    "fnlp/moss-moon-003-sft-int8",
-    "fnlp/moss-moon-003-sft-plugin-int8",
+    "OpenMOSS-Team/moss-moon-003-base",
+    "OpenMOSS-Team/moss-moon-003-sft",
+    "OpenMOSS-Team/moss-moon-003-sft-plugin",
+    "OpenMOSS-Team/moss-moon-003-sft-int4",
+    "OpenMOSS-Team/moss-moon-003-sft-plugin-int4",
+    "OpenMOSS-Team/moss-moon-003-sft-int8",
+    "OpenMOSS-Team/moss-moon-003-sft-plugin-int8",
 ]
 
 

@@ -28,33 +28,33 @@ VOCAB_FILES_NAMES = {
 
 PRETRAINED_VOCAB_FILES_MAP = {
     "vocab_file": {
-        "fnlp/moss-moon-003-base": "https://huggingface.co/fnlp/moss-moon-003-base/resolve/main/vocab.json",
-        "fnlp/moss-moon-003-sft": "https://huggingface.co/fnlp/moss-moon-003-sft/resolve/main/vocab.json",
-        "fnlp/moss-moon-003-sft-plugin": "https://huggingface.co/fnlp/moss-moon-003-sft-plugin/resolve/main/vocab.json",
-        "fnlp/moss-moon-003-sft-int8": "https://huggingface.co/fnlp/moss-moon-003-sft-int8/resolve/main/vocab.json",
-        "fnlp/moss-moon-003-sft-plugin-int8": "https://huggingface.co/fnlp/moss-moon-003-sft-plugin-int8/resolve/main/vocab.json",
-        "fnlp/moss-moon-003-sft-int4": "https://huggingface.co/fnlp/moss-moon-003-sft-int4/resolve/main/vocab.json",
-        "fnlp/moss-moon-003-sft-plugin-int4": "https://huggingface.co/fnlp/moss-moon-003-sft-plugin-int4/resolve/main/vocab.json",
+        "OpenMOSS-Team/moss-moon-003-base": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-base/resolve/main/vocab.json",
+        "OpenMOSS-Team/moss-moon-003-sft": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft/resolve/main/vocab.json",
+        "OpenMOSS-Team/moss-moon-003-sft-plugin": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-plugin/resolve/main/vocab.json",
+        "OpenMOSS-Team/moss-moon-003-sft-int8": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-int8/resolve/main/vocab.json",
+        "OpenMOSS-Team/moss-moon-003-sft-plugin-int8": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-plugin-int8/resolve/main/vocab.json",
+        "OpenMOSS-Team/moss-moon-003-sft-int4": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-int4/resolve/main/vocab.json",
+        "OpenMOSS-Team/moss-moon-003-sft-plugin-int4": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-plugin-int4/resolve/main/vocab.json",
     },
     "merges_file": {
-        "fnlp/moss-moon-003-base": "https://huggingface.co/fnlp/moss-moon-003-base/resolve/main/merges.txt",
-        "fnlp/moss-moon-003-sft": "https://huggingface.co/fnlp/moss-moon-003-sft/resolve/main/merges.txt",
-        "fnlp/moss-moon-003-sft-plugin": "https://huggingface.co/fnlp/moss-moon-003-sft-plugin/resolve/main/merges.txt",
-        "fnlp/moss-moon-003-sft-int8": "https://huggingface.co/fnlp/moss-moon-003-sft-int8/resolve/main/merges.txt",
-        "fnlp/moss-moon-003-sft-plugin-int8": "https://huggingface.co/fnlp/moss-moon-003-sft-plugin-int8/resolve/main/merges.txt",
-        "fnlp/moss-moon-003-sft-int4": "https://huggingface.co/fnlp/moss-moon-003-sft-int4/resolve/main/merges.txt",
-        "fnlp/moss-moon-003-sft-plugin-int4": "https://huggingface.co/fnlp/moss-moon-003-sft-plugin-int4/resolve/main/merges.txt",
+        "OpenMOSS-Team/moss-moon-003-base": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-base/resolve/main/merges.txt",
+        "OpenMOSS-Team/moss-moon-003-sft": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft/resolve/main/merges.txt",
+        "OpenMOSS-Team/moss-moon-003-sft-plugin": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-plugin/resolve/main/merges.txt",
+        "OpenMOSS-Team/moss-moon-003-sft-int8": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-int8/resolve/main/merges.txt",
+        "OpenMOSS-Team/moss-moon-003-sft-plugin-int8": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-plugin-int8/resolve/main/merges.txt",
+        "OpenMOSS-Team/moss-moon-003-sft-int4": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-int4/resolve/main/merges.txt",
+        "OpenMOSS-Team/moss-moon-003-sft-plugin-int4": "https://huggingface.co/OpenMOSS-Team/moss-moon-003-sft-plugin-int4/resolve/main/merges.txt",
     },
 }
 
 PRETRAINED_POSITIONAL_EMBEDDINGS_SIZES = {
-    "fnlp/moss-moon-003-base": 2048,
-    "fnlp/moss-moon-003-sft": 2048,
-    "fnlp/moss-moon-003-sft-plugin": 2048,
-    "fnlp/moss-moon-003-sft-int8": 2048,
-    "fnlp/moss-moon-003-sft-plugin-int8": 2048,
-    "fnlp/moss-moon-003-sft-int4": 2048,
-    "fnlp/moss-moon-003-sft-plugin-int4": 2048,
+    "OpenMOSS-Team/moss-moon-003-base": 2048,
+    "OpenMOSS-Team/moss-moon-003-sft": 2048,
+    "OpenMOSS-Team/moss-moon-003-sft-plugin": 2048,
+    "OpenMOSS-Team/moss-moon-003-sft-int8": 2048,
+    "OpenMOSS-Team/moss-moon-003-sft-plugin-int8": 2048,
+    "OpenMOSS-Team/moss-moon-003-sft-int4": 2048,
+    "OpenMOSS-Team/moss-moon-003-sft-plugin-int4": 2048,
 }
 
 

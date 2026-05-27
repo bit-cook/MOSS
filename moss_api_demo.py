@@ -20,17 +20,17 @@ logger.setLevel("ERROR")
 warnings.filterwarnings("ignore")
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--model_name", default="fnlp/moss-moon-003-sft-int4", 
-                    choices=["fnlp/moss-moon-003-sft", 
-                             "fnlp/moss-moon-003-sft-int8", 
-                             "fnlp/moss-moon-003-sft-int4"], type=str)
+parser.add_argument("--model_name", default="OpenMOSS-Team/moss-moon-003-sft-int4", 
+                    choices=["OpenMOSS-Team/moss-moon-003-sft", 
+                             "OpenMOSS-Team/moss-moon-003-sft-int8", 
+                             "OpenMOSS-Team/moss-moon-003-sft-int4"], type=str)
 parser.add_argument("--gpu", default="0", type=str)
 args = parser.parse_args()
 os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
 num_gpus = len(args.gpu.split(","))
 
-if args.model_name in ["fnlp/moss-moon-003-sft-int8", "fnlp/moss-moon-003-sft-int4"] and num_gpus > 1:
-    raise ValueError("Quantized models do not support model parallel. Please run on a single GPU (e.g., --gpu 0) or use `fnlp/moss-moon-003-sft`")
+if args.model_name in ["OpenMOSS-Team/moss-moon-003-sft-int8", "OpenMOSS-Team/moss-moon-003-sft-int4"] and num_gpus > 1:
+    raise ValueError("Quantized models do not support model parallel. Please run on a single GPU (e.g., --gpu 0) or use `OpenMOSS-Team/moss-moon-003-sft`")
 
 model_path = args.model_name
 if not os.path.exists(model_path):

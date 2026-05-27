@@ -14,10 +14,10 @@ from models.tokenization_moss import MossTokenizer
 from utils import StopWordsCriteria
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--model_name", default="fnlp/moss-moon-003-sft-int4", 
-                    choices=["fnlp/moss-moon-003-sft", 
-                             "fnlp/moss-moon-003-sft-int8", 
-                             "fnlp/moss-moon-003-sft-int4"], type=str)
+parser.add_argument("--model_name", default="OpenMOSS-Team/moss-moon-003-sft-int4", 
+                    choices=["OpenMOSS-Team/moss-moon-003-sft", 
+                             "OpenMOSS-Team/moss-moon-003-sft-int8", 
+                             "OpenMOSS-Team/moss-moon-003-sft-int4"], type=str)
 parser.add_argument("--gpu", default="0", type=str)
 args = parser.parse_args()
 
@@ -25,7 +25,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
 num_gpus = len(args.gpu.split(","))
 
 if ('int8' in args.model_name or 'int4' in args.model_name) and num_gpus > 1:
-    raise ValueError("Quantized models do not support model parallel. Please run on a single GPU (e.g., --gpu 0) or use `fnlp/moss-moon-003-sft`")
+    raise ValueError("Quantized models do not support model parallel. Please run on a single GPU (e.g., --gpu 0) or use `OpenMOSS-Team/moss-moon-003-sft`")
 
 st.set_page_config(
      page_title="MOSS",

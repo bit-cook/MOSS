@@ -12,7 +12,7 @@ class MossConfig(PretrainedConfig):
     This is the configuration class to store the configuration of a [`MossModel`]. It is used to instantiate a
     Moss model according to the specified arguments, defining the model architecture. Instantiating a configuration
     with the defaults will yield a similar configuration to that of the Moss
-    [fnlp/moss-moon-003-base](https://huggingface.co/fnlp/moss-moon-003-base) architecture. Configuration objects
+    [OpenMOSS-Team/moss-moon-003-base](https://huggingface.co/OpenMOSS-Team/moss-moon-003-base) architecture. Configuration objects
     inherit from [`PretrainedConfig`] and can be used to control the model outputs. Read the documentation from
     [`PretrainedConfig`] for more information.
 

@@ -58,7 +58,7 @@ class Inference:
             parallelism (bool, optional): Whether to initialize model parallelism. Defaults to True.
             device_map (Optional[Union[str, List[int]]], optional): The list of GPU device indices for model parallelism or "auto" to use the default device map. Defaults to None.
         """
-        self.model_dir = "fnlp/moss-moon-003-sft" if not model_dir else model_dir
+        self.model_dir = "OpenMOSS-Team/moss-moon-003-sft" if not model_dir else model_dir
 
         if model:
             self.model = model
@@ -348,11 +348,11 @@ if __name__ == "__main__":
     # os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
     
     # Create an Inference instance with the specified model directory.
-    infer = Inference(model_dir="fnlp/moss-moon-003-sft", device_map="auto")
+    infer = Inference(model_dir="OpenMOSS-Team/moss-moon-003-sft", device_map="auto")
 
     # ！！！如果需要运行量化版本，请以以下方式load模型！！！
     # If you need to load a quantized model, please instead load the model and then pass it into Inference.__init__.
-    # model = MossForCausalLM.from_pretrained("fnlp/moss-moon-003-sft-int4").half().cuda()
+    # model = MossForCausalLM.from_pretrained("OpenMOSS-Team/moss-moon-003-sft-int4").half().cuda()
     # infer = Inference(model, device_map="auto")
 
     # Define a test case string.
